@@ -15,3 +15,13 @@ if (a + b) > c and (a + c) > c and (b + c) > a:  # control if conditions are sat
     print('This triangle can be real')
 else:  # in other case message will be that is imposible to create that triangle
     print('Triangle is imposible to create')
+
+
+# Function that help us to know that type of triangle is presented by knowing the sides lenght.
+def triangle_type(a, b, c):
+    if a == b == c:
+        print('This is equilateral triangle')
+    elif a == b or b == c or a == c:
+        print('This is isosceles triangle')
+    else:
+        print('This is scalene triangle')
