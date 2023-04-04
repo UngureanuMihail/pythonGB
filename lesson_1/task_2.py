@@ -3,3 +3,15 @@
 # других. Если хотя бы в одном случае отрезок окажется больше суммы двух других, то треугольника с такими сторонами не
 # существует.
 # Отдельно сообщить является ли треугольник разносторонним, равнобедренным или равносторонним.
+
+
+# introduction of values
+a = input('Introduce your first value a = ')
+b = input('Introduce your second value b = ')
+c = input('Introduce your third value c = ')
+
+# logic control
+if (a + b) > c and (a + c) > c and (b + c) > a:  # control if conditions are satisfacted
+    print('This triangle can be real')
+else:  # in other case message will be that is imposible to create that triangle
+    print('Triangle is imposible to create')
